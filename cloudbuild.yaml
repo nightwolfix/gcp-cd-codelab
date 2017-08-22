@@ -3,7 +3,7 @@ steps:
     args: ["install", "github.com/nightwolfix/gcp-cd-codelab"]
     env: ["PROJECT_ROOT=github.com/nightwolfix/gcp-cd-codelab"]
   - name: "gcr.io/cloud-builders/docker"
-    args: ["build", "-t", "gcr.io/GCP-Demo-Mauro/gcp-cd-codelab:$REVISION_ID", "-f", "Dockerfile", "."]
+    args: ["build", "-t", "gcr.io/gcp-demo-mauro/gcp-cd-codelab:$REVISION_ID", "-f", "Dockerfile", "."]
 images:
-  - "gcr.io/GCP-Demo-Mauro/gcp-cd-codelab:$REVISION_ID"
+  - "gcr.io/gcp-demo-mauro/gcp-cd-codelab:$REVISION_ID"
 
